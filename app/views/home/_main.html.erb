@@ -1,0 +1,105 @@
+<div id="slider" class="mui-slider" >
+  <div class="mui-slider-group mui-slider-loop">
+    <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+    <div class="mui-slider-item mui-slider-item-duplicate">
+      <a href="#">
+        <%=image_tag("slider.jpg") %>
+      </a>
+    </div>
+    <!-- 第一张 -->
+    <div class="mui-slider-item">
+      <a href="#">
+        <%=image_tag("slider.jpg") %>
+      </a>
+    </div>
+    <!-- 第二张 -->
+    <div class="mui-slider-item">
+      <a href="#">
+        <%=image_tag("slider.jpg") %>
+      </a>
+    </div>
+    <!-- 第三张 -->
+    <div class="mui-slider-item">
+      <a href="#">
+        <%=image_tag("slider.jpg") %>
+      </a>
+    </div>
+    <!-- 第四张 -->
+    <div class="mui-slider-item">
+      <a href="#">
+        <%=image_tag("slider.jpg") %>
+      </a>
+    </div>
+    <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+    <div class="mui-slider-item mui-slider-item-duplicate">
+      <a href="#">
+        <%=image_tag("slider.jpg") %>
+      </a>
+    </div>
+  </div>
+  <div class="mui-slider-indicator">
+    <div class="mui-indicator mui-active"></div>
+    <div class="mui-indicator"></div>
+    <div class="mui-indicator"></div>
+    <div class="mui-indicator"></div>
+  </div>
+</div>
+
+<div class="mui-content">
+  <ul class="mui-table-view mui-grid-view mui-grid-9">
+    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+      <a href="#">
+        <span class="mui-icon xc-icon"><%= image_tag("setting.png")%></span>
+        <div class="mui-media-body">系统状态</div>
+      </a>
+    </li>
+    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+      <a href="#">
+        <span class="mui-icon xc-icon"><%= image_tag("warning.png")%></span>
+        <div class="mui-media-body">告警信息</div>
+      </a>
+    </li>
+    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+      <a href="#">
+        <span class="mui-icon xc-icon"><%= image_tag("arrange.png")%></span>
+        <div class="mui-media-body">工作安排</div>
+      </a>
+    </li>
+    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+      <a href="#">
+        <span class="mui-icon xc-icon"><%= image_tag("sun.png")%></span>
+        <div class="mui-media-body">能效管理</div>
+      </a>
+    </li>
+    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+      <a href="#">
+        <span class="mui-icon xc-icon"><%= image_tag("phone.png")%></span>
+        <div class="mui-media-body">IT管理</div>
+      </a>
+    </li>
+    <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+      <a href="#">
+        <span class="mui-icon xc-icon"><%= image_tag("more.png")%></span>
+        <div class="mui-media-body">其他</div>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<script type="text/javascript" charset="utf-8">
+  mui.init({
+    swipeBack:true //启用右滑关闭功能
+  });
+  var slider = mui("#slider");
+  document.getElementById("switch").addEventListener('toggle', function(e) {
+    if (e.detail.isActive) {
+      slider.slider({
+        interval: 5000
+      });
+    } else {
+      slider.slider({
+        interval: 0
+      });
+    }
+  });
+</script>
