@@ -36,7 +36,7 @@ html {font-size: 62.5%; -webkit-text-size-adjust: 100%;}
 //首页九宫格背景为白色
 .home__index {
   .mui-table-view-cell {
-    padding-left: 17%;
+    padding-left: 20%;
     &.account {
       background: image-url("account.png") no-repeat 35% 11px;
     }
@@ -51,7 +51,7 @@ html {font-size: 62.5%; -webkit-text-size-adjust: 100%;}
     }
     &.active {
       border-left: solid 10px #2ea0ff;
-      padding-left: 15%;
+      padding-left: 18%;
       &.account {
         background: #000 image-url("account.png") no-repeat 32% 11px;
       }
