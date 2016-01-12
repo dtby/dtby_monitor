@@ -3,6 +3,9 @@ html {font-size: 62.5%; -webkit-text-size-adjust: 100%;}
 .text-center {
   text-align: center;
 }
+.white-bg {
+  background: #fff!important;
+}
 
 .xc-icon {
   width: 3rem;
@@ -65,5 +68,11 @@ html {font-size: 62.5%; -webkit-text-size-adjust: 100%;}
         background: #000 image-url("about.png") no-repeat 32% 11px;
       }
     }
+  }
+}
+.systems__index {
+  h3 {
+    height: 4rem;
+    line-height: 4rem;
   }
 }
