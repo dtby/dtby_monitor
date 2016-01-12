@@ -6,6 +6,12 @@ Rails.application.routes.draw do
   resources :effects, only: :index
   #电池组
   resources :powers, only: :index
+  #工作安排
+  resources :works, only: :index
+  #系统状态
+  resources :systems, only: :index
+  #IT管理
+  resources :its, only: :index
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
