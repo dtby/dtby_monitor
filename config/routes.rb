@@ -12,6 +12,12 @@ Rails.application.routes.draw do
   resources :systems, only: :index
   #IT管理
   resources :its, only: :index
+  #用户管理
+  resource :users, only: [] do
+    collection do
+      get :sign_in
+    end
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
