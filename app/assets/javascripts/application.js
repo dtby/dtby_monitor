@@ -14,3 +14,13 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+function link(href) {
+  window.location.href=href;
+}
+$(function(){
+  mui('.mui-table-view-cell').on('tap', 'a', function(){
+    var _href = $(this).attr('href');
+    link(_href);
+  });
+});

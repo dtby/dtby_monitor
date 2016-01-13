@@ -1,0 +1,32 @@
+
+
+<script type="text/javascript">
+    $(function(){
+        $("[id$='circle']").percircle();
+    });
+</script>
+
+<ul class="list">
+  <% 4.times do %>
+    <%= link_to "" do %>
+      <li>
+        <%= image_tag("ups-image.png") %>
+        <div class="circle">
+          <div id="redcircle" data-percent="43" data-animate="false" class="dark red small"></div>
+          <p>ddddd</p>
+        </div>
+        <div class="circle">
+          <div id="redcircle" data-percent="43" data-animate="false" class="dark red small"></div>
+          <p>ddddd</p>
+        </div><div class="circle">
+          <div id="redcircle" data-percent="43" data-animate="false" class="dark red small"></div>
+          <p>ddddd</p>
+        </div><div class="circle">
+          <div id="redcircle" data-percent="43" data-animate="false" class="dark red small"></div>
+          <p>ddddd</p>
+        </div>
+        <span class="mui-icon mui-icon-arrowright"></span>
+      </li>
+    <% end %>
+  <% end %>
+</ul>

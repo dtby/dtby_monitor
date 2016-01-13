@@ -18,6 +18,8 @@ Rails.application.routes.draw do
       get :sign_in
     end
   end
+
+  resources :devices, only: [:show, :index]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
